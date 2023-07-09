@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>.net6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Producer\" />
+    <Folder Include="Consumer\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Z.RabbitMq.Entities\Z.RabbitMq.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
